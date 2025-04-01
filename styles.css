@@ -2,6 +2,7 @@
   --thin-line: solid black 2px;
   --background-color: rgb(31 41 55);
   --main-font-color: rgb(229 232 228);
+  --link-color: rgb(109, 153, 214);
   --main-font-family: "Maven Pro", sans-serif;
   --box-color: black;
 }
@@ -19,7 +20,7 @@ body{
 header{
   padding: 5px 12px;
   font-weight: bold;
-  text-align: center;
+  
 }
 
 #navbar{
@@ -60,13 +61,8 @@ article p{
   padding: 10px;
 }
 
-footer{
-  padding-left: 210px;
-   
-}
-
-footer > p {
-    
+a:hover{
+  color: var(--link-color);
 }
 
 
@@ -89,8 +85,6 @@ footer > p {
   .black-box{
     height: 60px;
   }
-  footer {
-    padding: 20px;
-  }
+  
 }
 
