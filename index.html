@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="wiewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="symfony documentation page">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Installing & Setting up the Symfony Framework</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Setting up Symfony</header>
+    <ul>
+      <li><a class="nav-link" href="#technical_requirements">Technical Requirements</a></li>
+      <li><a class="nav-link" href="#creating_symfony_application">Creating Symfony application</a></li>
+      <li><a class="nav-link" href="#setting_up_an_existing_symfony_project">Setting up an existing symfony project</a></li>
+      <li><a class="nav-link" href="#running_symfony_application">Running symfony application</a></li>
+      <li><a class="nav-link" href="#installing_packages">Installing packages</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="technical_requirements">
+        <header>Technical Requirements</header>
+        <article>
+           <p>Before creating your first Symfony application you must: </p>
+            <ul>
+              <li>Install PHP 8.2 or higher and these PHP extensions (which are installed and enabled by default in most PHP 8 installations): Ctype, iconv, PCRE, Session, SimpleXML, and Tokenizer;</li>
+              <li>Install Composer, which is used to install PHP packages.</li>
+              
+            
+            <li>Also, install the Symfony CLI. This is optional, but it gives you a helpful binary called symfony that provides all tools you need to develop and run your Symfony application locally.</li>
+
+            <li>The symfony binary also provides a tool to check if your computer meets all requirements. Open your console terminal and run this command:</li>
+            <li>The Symfony CLI is open source, and you can contribute to it in the symfony-cli/symfony-cli GitHub repository.</li>
+              </ul>
+              <div class="black-box">
+                <code>symfony check:requirements</code>
+              </div>
+              
+        </article>
+    </section>
+    <section class="main-section" id="creating_symfony_application">
+        <header>Creating Symfony Application</header>
+        <article>
+           <p>Open your console terminal and run any of these commands to create a new Symfony application:</p>
+            <div class="black-box">
+              <code>symfony new my_project_directory --version="7.2.x" --webapp</code>
+              <code>symfony new my_project_directory --version="7.2.x"</code>
+            </div>
+            <p>The only difference between these two commands is the number of packages installed by default. The --webapp option installs extra packages to give you everything you need to build a web application.</p>
+        </article>
+    </section>
+    <section class="main-section" id="setting_up_an_existing_symfony_project">
+        <header>Setting up an existing symfony project</header>
+        <article>
+          <p>In addition to creating new Symfony projects, you will also work on projects already created by other developers. In that case, you only need to get the project code and install the dependencies with Composer. Assuming your team uses Git, setup your project with the following commands: </p>
+          <div class="black-box">
+            <code>cd projects/</code>
+            <code>git clone ...</code>
+            <code>cd my-project</code>
+            <code>composer install</code>
+          </div>
+        </article>
+    </section>
+    <section class="main-section" id="running_symfony_application">
+        <header>Running Symfony Application</header>
+        <article>
+          <p>In production, you should install a web server like Nginx or Apache and configure it to run Symfony. This method can also be used if you're not using the Symfony local web server for development.</p>
+          <p>However for local development, the most convenient way of running Symfony is by using the local web server provided by the symfony binary. This local server provides among other things support for HTTP/2, concurrent requests, TLS/SSL and automatic generation of security certificates.</p>
+          <p>Open your console terminal, move into your new project directory and start the local web server as follows:</p>
+          <div class="black-box">
+            <code>cd my-project/ </code>
+    
+            <code>symfony server:start </code>
+          </div>
+        </article>
+    </section>
+    <section class="main-section" id="installing_packages">
+        <header>Installing Packages</header>
+        <article>
+          <p>A common practice when developing Symfony applications is to install packages (Symfony calls them bundles) that provide ready-to-use features. Packages usually require some setup before using them (editing some file to enable the bundle, creating some file to add some initial config, etc.)</p>
+
+          <p>Most of the time this setup can be automated and that's why Symfony includes Symfony Flex, a tool to simplify the installation/removal of packages in Symfony applications. Technically speaking, Symfony Flex is a Composer plugin that is installed by default when creating a new Symfony application and which automates the most common tasks of Symfony applications.</p>
+          <p>Symfony Flex modifies the behavior of the require, update, and remove Composer commands to provide advanced features. Consider the following example: </p>
+          <div class="black-box">
+            <code>cd my-project/ </code>
+            <code>composer require logger </code>
+          </div>
+        </article>
+    </section>
+  </main>
+</body>
+</html>
