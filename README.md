@@ -6,8 +6,8 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/CSS)
 
-![Preview](https://raw.githubusercontent.com/calypsohebrard/fcc-technical/main/images/screenshot.png)
-*(Ajoutez une capture d'écran dans le dossier `/images`)*
+
+![Capture d'écran 2025-04-22 133728](https://github.com/user-attachments/assets/3d32cd21-ada1-4149-8512-93428a863692)
 
 ## 📋 Exigences remplies
 Ce projet satisfait toutes les [user stories freeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page) :
