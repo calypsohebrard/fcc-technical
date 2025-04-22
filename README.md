@@ -23,7 +23,7 @@ Ce projet satisfait toutes les [user stories freeCodeCamp](https://www.freecodec
 - **Accessibilité** : Structure sémantique ARIA
 
 ## 🛠 Technologies utilisées
-```plaintext
+
 - HTML5 (balisage sémantique)
 - CSS3 (Flexbox, Media Queries)
 - Pas de JavaScript requis (pure HTML/CSS)
